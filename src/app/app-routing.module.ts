@@ -3,7 +3,7 @@ import { HomeComponent } from "./home/home.component";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { NgModule } from "@angular/core";
-import { PageTitleResolver } from "./services/page-title.resolver";
+import { PageTitleResolver } from "./services/page-title/page-title.resolver";
 
 export interface PageData {
   title: string;

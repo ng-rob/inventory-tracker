@@ -6,7 +6,7 @@ import {
 } from "@angular/router";
 import { Observable, of } from "rxjs";
 import { PageTitleService } from "./page-title.service";
-import { PageData } from "../app-routing.module";
+import { PageData } from "../../app-routing.module";
 
 @Injectable({
   providedIn: "root",

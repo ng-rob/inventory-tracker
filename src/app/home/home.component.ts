@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 import { Observable } from "rxjs";
-import { PageTitleService } from "../services/page-title.service";
+import { PageTitleService } from "../services/page-title/page-title.service";
 
 @Component({
   selector: "app-home",
