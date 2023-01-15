@@ -28,6 +28,11 @@ const routes: Routes = [
           import("./users/users.module").then(m => m.UsersModule),
       },
       {
+        path: "browser",
+        loadChildren: () =>
+          import("./browser/browser.module").then(m => m.BrowserModule),
+      },
+      {
         path: "**",
         redirectTo: "users",
       },
