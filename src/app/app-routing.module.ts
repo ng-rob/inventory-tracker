@@ -1,8 +1,8 @@
 import { RouterModule, Routes } from '@angular/router';
-import { NgModule } from '@angular/core';
+import { HomeComponent } from './home/home.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { HomeComponent } from './home/home.component';
+import { NgModule } from '@angular/core';
 import { PageTitleResolver } from './services/page-title.resolver';
 
 export interface PageData {

@@ -25,11 +25,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   templateUrl: './data-table.component.html',
   styleUrls: ['./data-table.component.scss'],
 })
-export class DataTableComponent implements OnInit {
+export class DataTableComponent {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
-
-  constructor() {}
-
-  ngOnInit(): void {}
 }

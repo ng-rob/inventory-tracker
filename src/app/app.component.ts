@@ -7,12 +7,12 @@ import {
 } from '@angular/router';
 import {
   Observable,
-  map,
-  buffer,
-  takeUntil,
-  filter,
-  tap,
   ReplaySubject,
+  buffer,
+  filter,
+  map,
+  takeUntil,
+  tap,
 } from 'rxjs';
 
 @Component({

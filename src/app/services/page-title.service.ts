@@ -8,8 +8,6 @@ export class PageTitleService {
   private title = new ReplaySubject<string>(1);
   title$ = this.title.asObservable();
 
-  constructor() {}
-
   updateTitle(value: string) {
     this.title.next(value);
   }
