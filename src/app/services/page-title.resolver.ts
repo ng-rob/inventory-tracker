@@ -1,15 +1,15 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 import {
   ActivatedRouteSnapshot,
   Resolve,
   RouterStateSnapshot,
-} from '@angular/router';
-import { Observable, of } from 'rxjs';
-import { PageTitleService } from './page-title.service';
-import { PageData } from '../app-routing.module';
+} from "@angular/router";
+import { Observable, of } from "rxjs";
+import { PageTitleService } from "./page-title.service";
+import { PageData } from "../app-routing.module";
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: "root",
 })
 export class PageTitleResolver implements Resolve<boolean> {
   constructor(private homeTitle: PageTitleService) {}

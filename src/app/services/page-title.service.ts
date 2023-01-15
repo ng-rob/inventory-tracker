@@ -1,8 +1,8 @@
-import { Injectable } from '@angular/core';
-import { ReplaySubject } from 'rxjs';
+import { Injectable } from "@angular/core";
+import { ReplaySubject } from "rxjs";
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: "root",
 })
 export class PageTitleService {
   private title = new ReplaySubject<string>(1);
