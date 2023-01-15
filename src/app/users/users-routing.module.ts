@@ -1,11 +1,11 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { DataTableComponent } from "./data-table.component";
+import { UsersComponent } from "./users.component";
 
 const routes: Routes = [
   {
     path: "",
-    component: DataTableComponent,
+    component: UsersComponent,
   },
 ];
 
@@ -13,4 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class DataTableRoutingModule {}
+export class UsersRoutingModule {}

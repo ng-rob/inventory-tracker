@@ -21,15 +21,15 @@ const routes: Routes = [
     component: HomeComponent,
     children: [
       {
-        path: "data-table",
-        data: buildPageData("Data Table Example"),
+        path: "users",
+        data: buildPageData("Users"),
         resolve: [PageTitleResolver],
         loadChildren: () =>
-          import("./data-table/data-table.module").then(m => m.DataTableModule),
+          import("./users/users.module").then(m => m.UsersModule),
       },
       {
         path: "**",
-        redirectTo: "data-table",
+        redirectTo: "users",
       },
     ],
   },
