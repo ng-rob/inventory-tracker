@@ -1,0 +1,16 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <span>Inventory Tracker</span>
+    </mat-toolbar>
+    <div id="router-outlet-content">
+      <mat-card>
+        <mat-card-title>{{ title$ | async }}</mat-card-title>
+        <mat-card-content>
+          <router-outlet></router-outlet>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
