@@ -18,7 +18,6 @@ export class PageTitleResolver implements Resolve<boolean> {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ): Observable<boolean> {
-    console.log(route.data);
     this.homeTitle.updateTitle((route.data as PageData).title);
     return of(true);
   }

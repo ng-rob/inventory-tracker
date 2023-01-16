@@ -1,1 +1,9 @@
-<app-user-listing [users]="(users$ | async) ?? []"></app-user-listing>
+<ng-container *ngIf="{ users: users$ | async } as observables">
+  <app-user-listing *ngIf="observables.users; else usersLoading" [users]="observables.users"></app-user-listing>
+</ng-container>
+
+<ng-template #usersLoading>
+  <p>
+    Users loading...
+  </p>
+</ng-template>

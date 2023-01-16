@@ -29,6 +29,8 @@ const routes: Routes = [
       },
       {
         path: "browser",
+        data: buildPageData("Browser"),
+        resolve: [PageTitleResolver],
         loadChildren: () =>
           import("./browser/browser.module").then(m => m.BrowserModule),
       },
